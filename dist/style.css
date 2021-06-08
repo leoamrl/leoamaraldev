@@ -1,0 +1,366 @@
+/*!
+    Theme Name: 
+    Theme URI: http://othersidelab.com.br/
+    Author: Otherside Lab
+    Author URI: http://othersidelab.com.br/
+    Description: 
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Text Domain: otherside
+    Tags: 
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+a:hover {
+  transition: 0.4s all ease;
+  text-decoration: none;
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+}
+
+.clear {
+  display: block;
+  clear: both;
+}
+
+a,
+button,
+input {
+  outline: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Mattone";
+  src: url(/assets/fonts/Mattone.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  width: 100%;
+  max-width: 1368px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1368px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+body {
+  background-color: black;
+  font-family: "Mattone", sans-serif, sans-serif;
+}
+
+span {
+  color: #E81F25;
+}
+
+button.button,
+a.button,
+input[type=submit].button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: fit-content;
+  height: 42px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 30px;
+  background-color: #E81F25;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+button.button:hover,
+a.button:hover,
+input[type=submit].button:hover {
+  background-color: #c01419;
+}
+
+.noise {
+  position: fixed;
+  top: 75vh;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header-menu {
+  display: none;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75vh;
+  min-height: 350px;
+  text-transform: lowercase;
+  background-color: #111;
+  z-index: 10;
+}
+.header-menu.open {
+  display: flex;
+}
+.header-menu .menu {
+  margin-bottom: 0;
+  margin-left: 18vw;
+}
+.header-menu .menu-item {
+  font-size: 38px;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-menu .menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.header-menu .menu-item:hover small {
+  margin-right: 20px;
+}
+.header-menu .menu-item small {
+  font-size: 10px;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-logo {
+  margin: 40px 15px;
+  font-size: 25px;
+}
+.header-trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 45px 15px;
+  width: 30px;
+  height: 13px;
+  cursor: pointer;
+  z-index: 11;
+}
+.header-trigger::before, .header-trigger::after {
+  content: "";
+  height: 2px;
+  background-color: #fff;
+  opacity: 0.7;
+}
+.header-trigger::before {
+  width: 30px;
+}
+.header-trigger::after {
+  width: 20px;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 999;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hide-preloader {
+  z-index: -999;
+  visibility: hidden;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.hero h1 {
+  text-transform: uppercase;
+  line-height: 120%;
+  font-size: clamp(15px, 4.7vw, 80px);
+  font-weight: normal;
+}
+
+.work-list {
+  padding-left: 30px;
+  padding-bottom: 40vh;
+}
+.work-item {
+  font-size: clamp(20px, 6vw, 46px);
+  margin-bottom: 25px;
+}
+.work-item small {
+  font-size: 13px;
+}
+.work a {
+  color: #fff;
+}

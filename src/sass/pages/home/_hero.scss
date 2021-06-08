@@ -1,0 +1,11 @@
+.hero {
+  @include flexCenter;
+  min-height: 100vh;
+
+  h1 {
+    text-transform: uppercase;
+    line-height: 120%;
+    font-size: clamp(15px, 4.7vw, 80px);
+    font-weight: normal;
+  }
+}

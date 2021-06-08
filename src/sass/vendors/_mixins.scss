@@ -1,0 +1,17 @@
+@mixin font($weight, $size, $color: null, $family: $karla, $line: null, $align: null) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  line-height: $line;
+  text-align: $align;
+}
+@mixin transition($speed: .4s) {
+  transition: all $speed cubic-bezier(.215,.61,.355,1);
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

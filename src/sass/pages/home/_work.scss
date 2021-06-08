@@ -1,0 +1,16 @@
+.work {
+  &-list {
+    padding-left: 30px;
+    padding-bottom: 40vh;
+  }
+  &-item {
+    font-size: clamp(20px, 6vw, 46px);
+    margin-bottom: 25px;
+    small {
+      font-size: 13px;
+    }
+  }
+  a {
+    color: $white;
+  }
+}
