@@ -26,8 +26,11 @@
   "scripts": {
     "start": "webpack -w",
     "build": "webpack --mode=production && npm run build:postcss",
-    "build:postcss": "postcss web/wordpress/wp-content/themes/otherside/style.css -d web/wordpress/wp-content/themes/otherside"
+    "build:postcss": "postcss dist/style.css -d dist"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.6.1"
+  }
 }

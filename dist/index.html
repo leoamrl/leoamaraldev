@@ -34,7 +34,7 @@
 
 	<link rel="icon" type="image/png" href="assets/images/favicon.ico"><!-- favicon -->
 
-  <link href="style.css" rel="stylesheet" type="text/css">
+  
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -56,15 +56,16 @@
 
   <header class="header">
     <div class="header-logo">
-      <h1>la<span>.</span></h1>
+      <h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="36"><text transform="translate(0 28)" fill="#fff" font-size="30" font-family="Museo-300,'Museo 300'" font-weight="300"><tspan x="0" y="0">la</tspan><tspan y="0" fill="#e81f25">.</tspan></text></svg></h1>
     </div>
     <div class="header-trigger" data-selector="menuTrigger"></div>
     <div class="header-menu" data-selector="menu">
       <ul class="menu">
-        <li class="menu-item"><small>01</small> work<span>.</span></li>
-        <li class="menu-item" data-selector="aboutTrigger"><small>02</small> about<span>.</span></li>
-        <li class="menu-item"><small>03</small> contact<span>.</span></li>
+        <li class="menu-item" data-selector="workTrigger"><small>01</small> <span>work</span><span class="colored">.</span></li>
+        <li class="menu-item" data-selector="aboutTrigger"><small>02</small> <span>about</span><span class="colored">.</span></li>
+        <li class="menu-item" data-selector="contactTrigger"><small>03</small> <span>contact</span><span class="colored">.</span></li>
       </ul>
+      <div class="menu-overlay" data-selector="menuCloser"></div>
     </div>
   </header>
 
@@ -74,31 +75,58 @@
         I'm a Front-end Developer<br>
         that creates pixel perfect<br>
         digital experiences<br>
-        for great startups.
+        for great startups<span class="colored">.</span>
       </h1>
     </section>
 
     <section class="work">
       <ul class="work-list">
-        <li class="work-item" data-type="website wordpress"><a href="https://bradleywealth.com/" target="_blank"><small>01</small> BradleyWealth<span>.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://hellogym.io/" target="_blank"><small>02</small> HelloGym<span>.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="http://loulycaixe.com.br/" target="_blank"><small>03</small> Louly Caixe<span>.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://fastandheavyfitness.com/" target="_blank"><small>04</small> Fast And Heavy<span>.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://makebetterminds.com/" target="_blank"><small>05</small> BetterMinds<span>.</span></a></li>
-        <li class="work-item" data-type="e-commerce wordpress"><a href="http://holistic-organics.com/" target="_blank"><small>06</small> Holistic Organics<span>.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://livlivestream.com/" target="_blank"><small>07</small> LivLive Stream<span>.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://neurolabsolutions.com/" target="_blank"><small>08</small> Lab Synapse<span>.</span></a></li>
-        <li class="work-item" data-type="landing page wordpress"><a href="https://brochure.ubis-geneva.ch/dba" target="_blank"><small>09</small> UBIS University<span>.</span></a></li>
-        <li class="work-item" data-type="landing page wordpress"><a href="https://hellogym.io/payments" target="_blank"><small>10</small> HelloGym Payments<span>.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="http://inclinic.cashlabs.com/" target="_blank"><small>11</small> CashLabs In Clinic<span>.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="http://resultecontabilidades.com.br/" target="_blank"><small>12</small> Resulte Contabilidade<span>.</span></a></li>
-				<li class="work-item" data-type="website wordpress"><a href="http://prollconstrutora.com.br/" target="_blank"><small>13</small> Proll Construtora<span>.</span></a></li>
-				<li class="work-item" data-type="website wordpress"><a href="http://solarpedradailha.com.br" target="_blank"><small>14</small> Solar Pedra da Ilha<span>.</span></a></li>
-				<li class="work-item" data-type="website wordpress"><a href="http://mcdowellenterprises.com" target="_blank"><small>15</small> McDowell Enterprises<span>.</span></a></li>
+        <li class="work-item" data-type="website wordpress"><a href="https://bradleywealth.com/" target="_blank"><small>01</small> <span>BradleyWealth</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="website wordpress"><a href="https://hellogym.io/" target="_blank"><small>02</small> <span>HelloGym</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="website wordpress"><a href="http://loulycaixe.com.br/" target="_blank"><small>03</small> <span>Louly Caixe</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="website wordpress"><a href="https://fastandheavyfitness.com/" target="_blank"><small>04</small> <span>Fast And Heavy</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="website wordpress"><a href="https://makebetterminds.com/" target="_blank"><small>05</small> <span>BetterMinds</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="e-commerce wordpress"><a href="http://holistic-organics.com/" target="_blank"><small>06</small> <span>Holistic Organics</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="website wordpress"><a href="https://livlivestream.com/" target="_blank"><small>07</small> <span>LivLive Stream</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="website wordpress"><a href="https://neurolabsolutions.com/" target="_blank"><small>08</small> <span>Lab Synapse</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="landing page wordpress"><a href="https://brochure.ubis-geneva.ch/dba" target="_blank"><small>09</small> <span>UBIS University</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="landing page wordpress"><a href="https://hellogym.io/payments" target="_blank"><small>10</small> <span>HelloGym Payments</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="website wordpress"><a href="http://inclinic.cashlabs.com/" target="_blank"><small>11</small> <span>CashLabs In Clinic</span><span class="colored">.</span></a></li>
+        <li class="work-item" data-type="website wordpress"><a href="http://resultecontabilidades.com.br/" target="_blank"><small>12</small> <span>Resulte Contabilidade</span><span class="colored">.</span></a></li>
+				<li class="work-item" data-type="website wordpress"><a href="http://prollconstrutora.com.br/" target="_blank"><small>13</small> <span>Proll Construtora</span><span class="colored">.</span></a></li>
+				<li class="work-item" data-type="website wordpress"><a href="http://solarpedradailha.com.br" target="_blank"><small>14</small> <span>Solar Pedra da Ilha</span><span class="colored">.</span></a></li>
+				<li class="work-item" data-type="website wordpress"><a href="http://mcdowellenterprises.com" target="_blank"><small>15</small> <span>McDowell Enterprises</span><span class="colored">.</span></a></li>
       </ul>
+    </section>
+
+    <section class="about" data-selector="about">
+      <div class="about-content">
+        <p>My name is Leo Amaral, I’m a brazilian front-end developer with 6 years of professional experience, UX and UI design enthusiast, my focus is delivering websites and digital products, mobile and web, using HTML, CSS, JS and all it's ecosystem.</p>
+
+        <p>I craft responsive, cross-browsing and pixel perfect experiences that go beyond simple pages, and really help ambitious brands grow.</p>
+
+        <p>I've worked with great digital agencies, companies, and startups such as NUVO, LivLive, Pagu and many others, <a href="./curriculum.pdf" target="_blank">check out my CV</a>.</p>
+
+        <p>Liked my work? <span data-selector="contactTrigger">Contact me</span>!</p>
+      </div>
+      <div class="about-position">
+        <p>looking for a remote freelance opportunity</p>
+      </div>
+    </section>
+
+    <section class="contact" data-selector="contact">
+      <div class="contact-overlay" data-selector="contactCloser"></div>
+      <div class="contact-content">
+        <p>If you want to hire me, send an e-mail to <a href="mailto:contato@leoamaraldev.com.br" target="_blank">contato@leoamaraldev.com.br</a> or text me on <a href="https://web.whatsapp.com/send?phone=5562993396662" target="_blank">WhatsApp</a>. You can see my working experience on my <a href="https://www.linkedin.com/in/leoamaraldev/" target="_blank">Linkedin page</a> or see some stuff at <a href="https://codepen.io/leoamrl/" target="_blank">CodePen</a>. I also share valuable content at <a href="http://instagram.com/leoamaraldev" target="_blank">Instagram</a>.</p>
+      </div>
     </section>
   </main>
 
+  <footer class="footer">
+    <div class="footer-contact" data-selector="contactTrigger">get in touch</div>
+  </footer>
+
+  <link href="style.css" rel="stylesheet" type="text/css">
   <script src="main.js" defer></script>
 </body>
 </html>

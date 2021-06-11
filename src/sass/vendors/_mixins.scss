@@ -6,7 +6,7 @@
   line-height: $line;
   text-align: $align;
 }
-@mixin transition($speed: .4s) {
+@mixin transition($speed: .15s) {
   transition: all $speed cubic-bezier(.215,.61,.355,1);
 }
 

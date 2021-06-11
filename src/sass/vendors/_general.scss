@@ -1,7 +1,25 @@
 body {
   background-color: black;
   font-family: $main-font, sans-serif;
+
+  @media (min-width: 1200px) {
+    &::after,
+    &::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      width: 1px; height: 100vh;
+      background-color: rgba($white, .05);
+    }
+    &::before {
+      left: 160px;
+    }
+    &::after {
+      right: 160px;
+    }
+  }
 }
-span {
+
+.colored {
   color: $main-color;
 }
