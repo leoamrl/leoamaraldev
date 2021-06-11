@@ -1,4 +1,4 @@
 import "../sass/style.scss";
-import "./modules/preloader";
+import "./modules/animations";
 import "./modules/noise";
 import "./modules/navigation";

@@ -2,32 +2,36 @@
   @include flexCenter;
   min-height: 100vh;
 
-  h1 {
+  &-title {
     text-transform: uppercase;
-    line-height: 120%;
     font-size: clamp(15px, 4.7vw, 80px);
     font-weight: normal;
+    
+    span {
+      display: block;
+      overflow: hidden;
+    }
   }
 
   @media (min-width: 1200px) {
     justify-content: flex-start;
 
-    h1 {
+    &-title {
       margin-left: 160px;
       font-size: clamp(15px, 3.75vw, 80px);
     }
   }
   @media (min-width: 1350px) {
-    h1 {
+    &-title {
       font-size: clamp(15px, 3.9vw, 80px);
     }
   }
   @media (min-width: 1600px) {
-    h1 {
+    &-title {
       font-size: clamp(15px, 4.1vw, 80px);
     }
   }@media (min-width: 1900px) {
-    h1 {
+    &-title {
       font-size: clamp(15px, 4.29vw, 88px);
     }
   }

@@ -34,7 +34,43 @@
 
 	<link rel="icon" type="image/png" href="assets/images/favicon.ico"><!-- favicon -->
 
-  
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      visibility: visible;
+      z-index: 999;
+      transition: all .15s cubic-bezier(.215,.61,.355,1);
+    }
+    .preloader-wrap {
+      overflow: hidden;
+      width: 80%;
+      max-width: 900px;
+    }
+    .preloader-name {
+      font-size: clamp(24px, 8vw, 80px);
+      font-weight: 400;
+    }
+    .preloader-line {
+      width: 80%;
+      max-width: 900px;
+      margin-top: 20px;
+      height: 1px;
+      background: white;
+    }
+    .hide-preloader {
+      z-index: -999;
+      visibility: hidden;
+    }
+  </style>
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -52,7 +88,12 @@
   ga('require', 'displayfeatures');
 </script>
 <body>
-  <div class="preloader"><img src="assets/images/preloader.gif" alt="preloader"></div>
+  <div class="preloader">
+    <div class="preloader-wrap">
+      <div class="preloader-name">leo amaral<span class="colored">.</span></div>
+    </div>
+    <div class="preloader-line"></div>
+  </div>
 
   <header class="header">
     <div class="header-logo">
@@ -72,10 +113,18 @@
   <main>
     <section class="hero">
       <h1 class="hero-title">
-        I'm a Front-end Developer<br>
-        that creates pixel perfect<br>
-        digital experiences<br>
-        for great startups<span class="colored">.</span>
+        <span>
+          <span>I'm a Front-end Developer</span>
+        </span>
+        <span>
+          <span>that creates pixel perfect</span>
+        </span>
+        <span>
+          <span>digital experiences</span>
+        </span>
+        <span>
+          <span>for great startups<strong class="colored">.</strong></span>
+        </span>
       </h1>
     </section>
 
@@ -123,7 +172,8 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-contact" data-selector="contactTrigger">get in touch</div>
+    <div class="footer-scroll">scroll</div>
+    <div class="footer-contact" data-selector="contactTrigger">get in touch <div class="footer-contact-background"></div></div>
   </footer>
 
   <link href="style.css" rel="stylesheet" type="text/css">

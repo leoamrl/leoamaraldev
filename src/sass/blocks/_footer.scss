@@ -1,10 +1,13 @@
 .footer {
   padding: 40px 15px;
+  &-scroll {
+    display: none;
+  }
   &-contact {
     text-align: right;
     letter-spacing: 2px;
     font-size: 11px;
-    opacity: .7;
+    color: rgba($white, .5);
     cursor: pointer;
   }
   @media (min-width: 1200px) {
@@ -12,12 +15,19 @@
     left: 0; bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0;
     height: 90px;
     border-top: 1px solid rgba($white, .05);
     z-index: 9;
 
+    &-scroll {
+      width: 160px;
+      @include flexCenter;
+      letter-spacing: 2px;
+      font-size: 11px;
+      color: rgba($white, .5);
+    }
     &-contact {
       width: 160px;
       @include flexCenter
