@@ -1,25 +1,25 @@
 body {
-  background-color: black;
+  background-color: #00102C;
   font-family: $main-font, sans-serif;
-
-  @media (min-width: 1200px) {
-    &::after,
-    &::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      width: 1px; height: 100vh;
-      background-color: rgba($white, .05);
-    }
-    &::before {
-      left: 160px;
-    }
-    &::after {
-      right: 160px;
-    }
-  }
 }
 
 .colored {
   color: $main-color;
+}
+
+.section {
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 120px;
+    color: rgba(255,255,255, .6)
+  }
+
+  @media (min-width: 768px) {
+    &-title {
+      text-align: left;
+    }
+  }
 }

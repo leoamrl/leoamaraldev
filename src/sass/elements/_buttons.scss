@@ -7,17 +7,32 @@ input[type=submit] {
     display: flex;
     @include transition;
     width: fit-content; height: 42px;
-    border-radius: 5px;
+    border-radius: 100px;
     border: none;
-    padding: 0 30px;
+    padding: 0 50px;
     background-color: $main-color;
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     color: $white;
 
     &:hover {
       background-color: darken($main-color, 10%);
+    }
+
+    &-ghost {
+      background-color: transparent;
+      border: 1px solid rgba(255,255,255, .15);
+      backdrop-filter: blur(4px);
+      font-weight: 400;
+
+      &:hover {
+        background-color: rgba(255,255,255, .15);
+      }
+    }
+
+    @media (min-width: 768px) {
+      height: 60px;
+      font-size: 20px;
     }
   }
 }

@@ -3,165 +3,85 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: rgb(0,0,0);
-	background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 80%);
 	width: 100%;
+  padding: 30px 15px;
 	z-index: 11;
 
-	&-menu {
-		display: none;
-		position: fixed;
-		top: 0; left: 0;
-		width: 100%; height: 100%;
-		text-transform: lowercase;
-		z-index: 10;
-		
-		&.open {
-			display: block;
-		}
-		
-		.menu {
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-			width: 100%; height: 75vh;
-			margin-bottom: 0;
-			min-height: 350px;
-			padding-left: 18vw;
-			@include transition;
-			background-color: #111;
-			&:hover {
-				.menu-item {
-					opacity: .7;
-	
-					&:hover {
-						opacity: 1;
-					}
-				}
-			}
-			&-item {
-				width: fit-content;
-				font-size: clamp(38px, 4.7vw, 80px);
-				@include transition;
-				cursor: pointer;
-				&:not(:last-child) {
-					margin-bottom: 40px;
-				}
-				&:hover {
-					small {
-						margin-right: 20px;
-					}
-					span {
-						&:not(.colored) {
-							text-shadow: 0 0 1px #fff;
-							filter: progid:DXImageTransform.Microsoft.Glow(Color=#ffffff,Strength=1);
-							color: #111;
-						}
-					}
-				}
-				span {
-					@include transition;
-				}
-				small {
-					font-size: clamp(10px, 3vw, 18px);
-					@include transition;
-				}
-			}
-			&-overlay {
-				width: 100%; height: 25vh;
-				background-color: rgba($black, .8);
-				backdrop-filter: blur(5px);
-			}
-		}
-	}
 	&-logo {
-		margin: 40px 15px;
-		font-size: 25px;
 		opacity: .6;
 	}
-	&-trigger {
-		position: relative;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		justify-content: space-between;
-		margin: 45px 15px;
-		width: 30px; height: 13px;
-		cursor: pointer;
-		z-index: 11;
-		&::before,
-		&::after {
-			content: '';
-			height: 2px;
-			background-color: $white;
-			opacity: .6;
-		}
-		&::before {
-			width: 30px;
-		}
-		&::after {
-			width: 20px;
-		}
-	}
-	&--about {
-		background: transparent;
-		.header {
-			&-logo {
-				svg {
-					text {
-						fill: #000
-					}
-				}
-			}
-			&-trigger {
-				&::before,
-				&::after {
-					background-color: $black;
-				}
-				&.open {
-					&::before,
-					&::after {
-						background-color: $white;
-					}	
-				}
-			}
-		}
-	}
-	@media (min-width: 1200px) {
-		border-bottom: 1px solid rgba($white, .05);
+  &-menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    padding: 80px 0;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #00102C;
+    .menu {
+      margin-right: 20px;
+      font-size: 20px;
+      text-align: right;
+      &-item {
+        margin-bottom: 20px;
 
-		&-menu {
-			flex-direction: row-reverse;
-			&.open {
-				display: flex;
-			}
-			.menu {
-				height: 100vh; width: 75vw;
-				&-item {
-					&:hover {
-						span {
-							&:not(.colored) {
-								text-shadow: 0 0 2px #fff;
-							}
-						}
-					}
-				}
-				&-overlay {
-					height: 100vh; width: 25vw;
-				}
-			}
-		}
-		&-logo,
-		&-trigger {
-			width: 160px;
-			margin: 0;
-			height: 90px;
-		}
+        &:first-child {
+          margin-bottom: 80px;
+          font-size: 16px;
+        }
+      }
+    }
+    a {
+      color: #fff;
+    }
+  }
+  &-trigger {
+    cursor: pointer;
+    div {
+      height: 2px;
+      &:first-child {
+        width: 30px;
+        background-color: rgba(#fff, .6);
+      }
+      &:last-child {
+        width: 20px;
+        margin-top: 10px;
+        margin-left: 5px;
+        background-color: rgba(#fff, .6);
+      }
+    }
+  }
+
+	@media (min-width: 1200px) {
+    padding: 40px;
 		&-logo {
 			@include flexCenter;
 		}
-		&-trigger {
-			padding: 38px 0;
-		}
+    &-trigger {
+      display: none;
+    }
+    &-menu {
+      position: relative;
+      height: initial;
+      width: initial;
+      padding: 0;
+      background-color: transparent;
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        font-size: 20px;
+
+        &-item {
+          margin-bottom: 0;
+          &:first-child {
+            margin-bottom: 0;
+            margin-right: 40px;
+          }
+        }
+      }
+    }
 	}
 }

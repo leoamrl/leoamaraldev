@@ -1,4 +1,6 @@
 import "../sass/style.scss";
 import "./modules/animations";
 import "./modules/noise";
-import "./modules/navigation";
+import { initMenu } from "./modules/menu";
+
+initMenu()

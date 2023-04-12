@@ -1,38 +1,62 @@
 .hero {
-  @include flexCenter;
+  padding: 200px 0;
   min-height: 100vh;
+  text-align: center;
 
   &-title {
-    text-transform: uppercase;
-    font-size: clamp(15px, 4.7vw, 80px);
+    font-size: clamp(15px, 6vw, 64px);
+    margin-bottom: 20px;
+    line-height: 120%;
     font-weight: normal;
-    
+
     span {
-      display: block;
-      overflow: hidden;
+      opacity: .8;
+    }
+  }
+  &-subtitle {
+    margin-bottom: 30px;
+    font-size: clamp(16px, 4.5vw, 40px);
+    line-height: 140%;
+    font-weight: 400;
+
+    span {
+      opacity: .8;
+    }
+  }
+  &-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .button {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
   }
 
-  @media (min-width: 1200px) {
-    justify-content: flex-start;
+  @media (min-width: 768px) {
+    text-align: left;
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 30px;
 
-    &-title {
-      margin-left: 160px;
-      font-size: clamp(15px, 3.75vw, 80px);
+      .button {
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
+      }
     }
   }
-  @media (min-width: 1350px) {
+
+  @media (min-width: 1360px) {
     &-title {
-      font-size: clamp(15px, 3.9vw, 80px);
+      margin-bottom: 40px;
     }
-  }
-  @media (min-width: 1600px) {
-    &-title {
-      font-size: clamp(15px, 4.1vw, 80px);
-    }
-  }@media (min-width: 1900px) {
-    &-title {
-      font-size: clamp(15px, 4.29vw, 88px);
+    &-subtitle {
+      margin-bottom: 80px;
     }
   }
 }
