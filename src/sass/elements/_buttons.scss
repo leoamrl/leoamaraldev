@@ -6,14 +6,16 @@ input[type=submit] {
     @include flexCenter;
     display: flex;
     @include transition;
-    width: fit-content; height: 42px;
+    width: fit-content; height: 50px;
     border-radius: 100px;
     border: none;
     padding: 0 50px;
+    font-family: $main-font;
     background-color: $main-color;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: $white;
+    cursor: pointer;
 
     &:hover {
       background-color: darken($main-color, 10%);

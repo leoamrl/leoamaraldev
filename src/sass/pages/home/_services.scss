@@ -1,7 +1,19 @@
 .services {
   padding-top: 100px;
   padding-bottom: 200px;
+  &-list {
+    &:hover {
+      .services-item {
+        opacity: .7;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
   &-item {
+    @include transition;
     margin-bottom: 60px;
     &-title {
       display: flex;
@@ -17,6 +29,11 @@
       h2 {
         font-weight: 700;
         font-size: 18px;
+      }
+      svg {
+        width: 10px;
+        margin-left: 40px;
+        margin-bottom: 2px;
       }
     }
     &-content {
@@ -42,6 +59,7 @@
 
   @media (min-width: 768px) {
     &-item {
+      margin-bottom: 100px;
       &-title {
         justify-content: flex-start;
 
@@ -50,6 +68,10 @@
         }
         h2 {
           font-size: 24px;
+        }
+        svg {
+          width: 17px;
+          margin-bottom: 4px;
         }
       }
       &-content {
@@ -72,8 +94,9 @@
       grid-template-columns: 1fr 1fr;
     }
     &-item {
+      margin-bottom: 120px;
       &-content {
-        padding-right: 60px;
+        padding-right: 80px;
       }
     }
   }
