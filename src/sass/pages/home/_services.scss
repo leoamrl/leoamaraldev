@@ -25,9 +25,11 @@
     &:nth-child(7),
     &:nth-child(8),
     &:nth-child(9) {
-      p {
-        &::before {
-          content: "0"counter(line-number);
+      .services-item-title {
+        p {
+          &::before {
+            content: "0"counter(line-number);
+          }
         }
       }
     }
@@ -54,6 +56,7 @@
         width: 10px;
         margin-left: 40px;
         margin-bottom: 2px;
+        @include transition;
       }
     }
     &-content {
@@ -115,6 +118,20 @@
     }
     &-item {
       margin-bottom: 120px;
+      &:hover {
+        .services-item-title {
+          svg {
+            opacity: 1;
+            transform: none;
+          }
+        }
+      }
+      &-title {
+        svg {
+          opacity: 0;
+          transform: translate(-10px, 10px);
+        }
+      }
       &-content {
         padding-right: 80px;
       }
