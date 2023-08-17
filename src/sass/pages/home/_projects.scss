@@ -2,6 +2,7 @@
   padding-top: 100px;
   padding-bottom: 200px;
   &-item {
+    @include transition;
     &-title {
       h2 {
         color: #fff;

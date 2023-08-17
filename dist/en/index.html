@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="geo.region" content="BR">
 	<meta name="language" content="pt-br">
-	<meta name="theme-color" content="#303030">
+	<meta name="theme-color" content="#00102C">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- viewport -->
 
@@ -15,7 +15,7 @@
 	<meta name="author" content="Leo Amaral">
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="front-end, desenvolvedor, developer, goiania, front, web designer, wordpress, seo, sites"/>
-	<meta name="description" content="I'm a Front-end Developer that creates pixel perfect websites, landing pages and mobile apps for great companies.">
+	<meta name="description" content="Desenvolvedor front-end e UI Designer especialista em criar e-commerces, softwares, websites institucionais, landing pages e apps para as melhores agências, startups e empresas.">
 
 	<!-- social -->
 	<!-- facebook -->
@@ -24,15 +24,17 @@
 	<meta property="og:title" content="Leo Amaral - Front-end Developer"/>
 	<meta property="og:url" content="http://leoamaraldev.com.br/"/>
 	<meta property="og:image" content="assets/images/social-facebook.png"/>
-	<meta property="og:description" content="I'm a Front-end Developer that creates pixel perfect websites, landing pages and mobile apps for great companies."/>	
+	<meta property="og:description" content="Desenvolvedor front-end e UI Designer especialista em criar e-commerces, softwares, websites institucionais, landing pages e apps para as melhores agências, startups e empresas."/>	
 
 	<!-- twitter -->
 	<meta property="twitter:title" content="Leo Amaral - Front-end Developer"/>
 	<meta property="twitter:url" content="http://leoamaraldev.com.br/"/>
 	<meta property="twitter:image" content="assets/images/social-twitter.png"/>
-	<meta property="twitter:description" content="I'm a Front-end Developer that creates pixel perfect websites, landing pages and mobile apps for great companies."/>
+	<meta property="twitter:description" content="Desenvolvedor front-end e UI Designer especialista em criar e-commerces, softwares, websites institucionais, landing pages e apps para as melhores agências, startups e empresas."/>
 
-	<link rel="icon" type="image/png" href="assets/images/favicon.ico"><!-- favicon -->
+	<link rel="icon" type="image/png" href="assets/images/favicon.png"><!-- favicon -->
+
+  <link href="style.css" rel="stylesheet" type="text/css">
 
   <style>
     .preloader {
@@ -41,7 +43,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: #000;
+      background: #00102C;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -58,6 +60,7 @@
     .preloader-name {
       font-size: clamp(24px, 8vw, 80px);
       font-weight: 400;
+      font-family: 'Mattone';
     }
     .preloader-line {
       width: 80%;
@@ -71,6 +74,18 @@
       visibility: hidden;
     }
   </style>
+
+  <!-- Hotjar Tracking Code for https://leoamaraldev.com.br -->
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2479337,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -87,6 +102,23 @@
   ga('send', 'pageview');
   ga('require', 'displayfeatures');
 </script>
+<script type="text/javascript">
+  _linkedin_partner_id = "5393353";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script><script type="text/javascript">
+  (function(l) {
+  if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+  window.lintrk.q=[]}
+  var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript";b.async = true;
+  b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+  s.parentNode.insertBefore(b, s);})(window.lintrk);
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=5393353&fmt=gif" />
+</noscript>
 <body>
   <div class="preloader">
     <div class="preloader-wrap">
@@ -97,86 +129,413 @@
 
   <header class="header">
     <div class="header-logo">
-      <h1><svg xmlns="http://www.w3.org/2000/svg" width="27.541" height="22.449"><path d="M13.521 21.949a5.859 5.859 0 01-3.51-1.111 4.071 4.071 0 01-1.619-3.358c0-2.15 1.225-3.656 3.642-4.474a18.175 18.175 0 015.6-.716h.838v-.178a4.677 4.677 0 00-.916-3.312 3.86 3.86 0 00-2.982-.95c-.817 0-2.94.237-2.94 1.321v.96H9.685V8.689c0-2.092 3.55-2.55 4.917-2.55 2.236 0 3.789.55 4.745 1.68a6.179 6.179 0 011.165 4.111v7.23a.586.586 0 00.662.659h1.258v1.771h-2.071c-1.262 0-1.8-.538-1.8-1.8 0-.516.02-.911.031-1.1v-.01h-.061a3.665 3.665 0 01-.481.9 5.336 5.336 0 01-4.529 2.369zm4.079-8.04c-2.127 0-7.107 0-7.107 3.451 0 1.373 1.051 2.85 3.358 2.85 2.854 0 4.621-2.912 4.621-5.61v-.691zM6.382 21.59h-2.13c-1.284 0-1.832-.547-1.832-1.829V2.93a.6.6 0 00-.659-.659H.501V.5h2.13c1.284 0 1.832.547 1.832 1.829V19.16a.584.584 0 00.659.659h1.261v1.77z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10"/><path fill="#e81f25" d="M25.141 19.2h2.4v2.4h-2.4z"/></svg></h1>
+      <a href="./" title="Leo Amaral - Front-end">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" width="27.541" height="22.449"><path d="M13.521 21.949a5.859 5.859 0 01-3.51-1.111 4.071 4.071 0 01-1.619-3.358c0-2.15 1.225-3.656 3.642-4.474a18.175 18.175 0 015.6-.716h.838v-.178a4.677 4.677 0 00-.916-3.312 3.86 3.86 0 00-2.982-.95c-.817 0-2.94.237-2.94 1.321v.96H9.685V8.689c0-2.092 3.55-2.55 4.917-2.55 2.236 0 3.789.55 4.745 1.68a6.179 6.179 0 011.165 4.111v7.23a.586.586 0 00.662.659h1.258v1.771h-2.071c-1.262 0-1.8-.538-1.8-1.8 0-.516.02-.911.031-1.1v-.01h-.061a3.665 3.665 0 01-.481.9 5.336 5.336 0 01-4.529 2.369zm4.079-8.04c-2.127 0-7.107 0-7.107 3.451 0 1.373 1.051 2.85 3.358 2.85 2.854 0 4.621-2.912 4.621-5.61v-.691zM6.382 21.59h-2.13c-1.284 0-1.832-.547-1.832-1.829V2.93a.6.6 0 00-.659-.659H.501V.5h2.13c1.284 0 1.832.547 1.832 1.829V19.16a.584.584 0 00.659.659h1.261v1.77z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10"/><path fill="#e81f25" d="M25.141 19.2h2.4v2.4h-2.4z"/></svg></h1>
+      </a>
     </div>
-    <div class="header-trigger" data-selector="menuTrigger"></div>
-    <div class="header-menu" data-selector="menu">
+    <div class="header-menu" data-menu>
       <ul class="menu">
-        <li class="menu-item" data-selector="workTrigger"><small>01</small> <span>work</span><span class="colored">.</span></li>
-        <li class="menu-item" data-selector="aboutTrigger"><small>02</small> <span>about</span><span class="colored">.</span></li>
-        <li class="menu-item" data-selector="contactTrigger"><small>03</small> <span>contact</span><span class="colored">.</span></li>
+        <li class="menu-item">
+          <a href="./en">
+            <span>EN</span><span class="colored">.</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#services">
+            <span>Serviços</span><span class="colored">.</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#projects">
+            <span>Projetos</span><span class="colored">.</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#about">
+            <span>Sobre</span><span class="colored">.</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact">
+            <span>Contato</span><span class="colored">.</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">
+            <span>Solicite um Orçamento</span><span class="colored">.</span>
+          </a>
+        </li>
       </ul>
-      <div class="menu-overlay" data-selector="menuCloser"></div>
+    </div>
+    <div class="header-trigger" data-menu-trigger>
+      <div></div>
+      <div></div>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <h1 class="hero-title">
-        <span>
-          <span>A Front-end Developer</span>
-        </span>
-        <span>
-          <span>expert in developing</span>
-        </span>
-        <span>
-          <span>digital experiences</span>
-        </span>
-        <span>
-          <span>for top startups<strong class="colored">.</strong></span>
-        </span>
-      </h1>
-    </section>
-
-    <section class="work">
-      <ul class="work-list">
-        <li class="work-item" data-type="website wordpress"><a href="https://bradleywealth.com/" target="_blank"><small>01</small> <span>BradleyWealth</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://hellogym.io/" target="_blank"><small>02</small> <span>HelloGym</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="http://loulycaixe.com.br/" target="_blank"><small>03</small> <span>Louly Caixe</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://fastandheavyfitness.com/" target="_blank"><small>04</small> <span>Fast And Heavy</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://makebetterminds.com/" target="_blank"><small>05</small> <span>BetterMinds</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="e-commerce wordpress"><a href="http://holistic-organics.com/" target="_blank"><small>06</small> <span>Holistic Organics</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://livlivestream.com/" target="_blank"><small>07</small> <span>LivLive Stream</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="https://neurolabsolutions.com/" target="_blank"><small>08</small> <span>Lab Synapse</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="landing page wordpress"><a href="https://brochure.ubis-geneva.ch/dba" target="_blank"><small>09</small> <span>UBIS University</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="landing page wordpress"><a href="https://hellogym.io/payments" target="_blank"><small>10</small> <span>HelloGym Payments</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="http://inclinic.cashlabs.com/" target="_blank"><small>11</small> <span>CashLabs In Clinic</span><span class="colored">.</span></a></li>
-        <li class="work-item" data-type="website wordpress"><a href="http://resultecontabilidades.com.br/" target="_blank"><small>12</small> <span>Resulte Contabilidade</span><span class="colored">.</span></a></li>
-				<li class="work-item" data-type="website wordpress"><a href="http://prollconstrutora.com.br/" target="_blank"><small>13</small> <span>Proll Construtora</span><span class="colored">.</span></a></li>
-				<li class="work-item" data-type="website wordpress"><a href="http://solarpedradailha.com.br" target="_blank"><small>14</small> <span>Solar Pedra da Ilha</span><span class="colored">.</span></a></li>
-				<li class="work-item" data-type="website wordpress"><a href="http://mcdowellenterprises.com" target="_blank"><small>15</small> <span>McDowell Enterprises</span><span class="colored">.</span></a></li>
-      </ul>
-    </section>
-
-    <section class="about" data-selector="about">
-      <div class="about-content">
-        <p>My name is Leo Amaral, I’m a brazilian front-end developer with 6 years of professional experience, UX and UI design enthusiast, my focus is delivering websites and digital products, mobile and web, using HTML, CSS, JS and all it's ecosystem.</p>
-
-        <p>I craft responsive, cross-browsing and pixel perfect experiences that go beyond simple pages, and really help ambitious brands grow.</p>
-
-        <p>I've worked with great digital agencies, companies, and startups such as NUVO, LivLive, Pagu and many others, <a href="./curriculum.pdf" target="_blank">check out my CV</a>.</p>
-
-        <p>Liked my work? <span data-selector="contactTrigger">Contact me</span>!</p>
-      </div>
-      <div class="about-position">
-        <p>looking for a remote freelance opportunity</p>
+      <div class="container">
+        <h1 class="hero-title">
+          <span>Desenvolvemos</span> produtos digitais <span>que multiplicam</span> resultados
+        </h1>
+        <h2 class="hero-subtitle">
+          <span>Desenvolvedor</span> front-end e UI designer <strong><u>especialista</u></strong> <span>em criar</span> e-commerces, softwares, websites <span>institucionais</span>, landing pages <span>e</span> mobile apps <span>para as melhores agências, startups e empresas</span>.
+        </h2>
+        <div class="hero-buttons">
+          <a href="./contact.html" class="button">Solicite um Orçamento</a>
+          <a href="https://api.whatsapp.com/send?phone=5562993396662&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista." onclick="window.lintrk('track', { conversion_id: 13058241 });" class="button button-ghost" target="_blank">Fale Com um Especialista</a>
+        </div>
       </div>
     </section>
 
-    <section class="contact" data-selector="contact">
-      <div class="contact-overlay" data-selector="contactCloser"></div>
-      <div class="contact-content">
-        <p>If you want to hire me, send an e-mail to <a href="mailto:contato@leoamaraldev.com.br" target="_blank">contato@leoamaraldev.com.br</a> or text me on <a href="https://web.whatsapp.com/send?phone=5562993396662" target="_blank">WhatsApp</a>. You can see my working experience on my <a href="https://www.linkedin.com/in/leoamaraldev/" target="_blank">Linkedin page</a> or see some stuff at <a href="https://codepen.io/leoamrl/" target="_blank">CodePen</a>. I also share valuable content at <a href="http://instagram.com/leoamaraldev" target="_blank">Instagram</a>.</p>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-title">Serviços</div>
+
+        <div class="services-list">
+          <div class="services-item">
+            <div class="services-item-title">
+              <p></p>
+              <h2>Desenvolvimento</h2>
+            </div>
+            <div class="services-item-content">
+              <p>Junto ao time de design, desenvolvemos softwares, e-commerces, sites institucionais, mobile apps e landing pages.</p>
+            </div>
+          </div>
+          <div class="services-item">
+            <div class="services-item-title">
+              <p></p>
+              <h2>UI/UX Design</h2>
+            </div>
+            <div class="services-item-content">
+              <p>Planejamos e criamos o design exclusivo para sua aplicação, baseados em dados e pesquisas com usuários.</p>
+            </div>
+          </div>
+          <div class="services-item">
+            <div class="services-item-title">
+              <p></p>
+              <h2>Dados</h2>
+            </div>
+            <div class="services-item-content">
+              <p>Através de ferramentas de monitoramento, podemos entender melhor o seu cliente, guiando decisões através de dados.</p>
+            </div>
+          </div>
+          <div class="services-item">
+            <div class="services-item-title">
+              <p></p>
+              <h2>Marketing</h2>
+            </div>
+            <div class="services-item-content">
+              <p>Economize tempo automatizando o fluxo do seu marketing, integrando todos os seus sistemas.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="./contact.html" class="button">Solicite um Orçamento</a>
       </div>
     </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-title">Projetos</div>
+
+        <div class="projects-list services-list">
+          <div class="projects-item services-item">
+            <a href="https://hellogym.io" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>HelloGym</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Front-end de software em Angular13+, mobile app Ionic e website institucional em WordPress para empresa estadunidense de software para academias. Desenvolvido em 2020. Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://newpravender.com.br" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>New Comunicação</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto de desenvolvimento de website institucional em WordPress para agência de marketing e comunicação. Desenvolvido em 2022.
+                Design por <a href="https://leandromelo.digital/" target="_blank">Leandro Melo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://bradleywealth.com" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>BradleyWealth</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Desenvolvimento de website institucional em WordPress para cliente estadunidense do ramo financeiro. Desenvolvido em 2020.
+                Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://azskinandbody.com/" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>Skinfinity Medspa</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Desenvolvimento de e-commerce em WordPress + Woocommerce para cliente estadunidense do ramo de estética. Desenvolvido em 2022.
+                Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://relaylive.com" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>Relay Live</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Desenvolvimento front-end de software em Angular13+, mobile app Ionic e website institucional em WordPress para startup. Desenvolvido em 2022. Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://bescreened.com" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>BeScreened</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Desenvolvimento de e-commerce em WordPress + Woocommerce para cliente estadunidense da área da saúde. Desenvolvido em 2023.
+                Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://studiomou.com.br" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>Studio Mou</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto de desenvolvimento de website institucional em WordPress para studio de arquitetura. Desenvolvido em 2022.
+                Design por <a href="https://leandromelo.digital/" target="_blank">Leandro Melo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://rikr.digital" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>RIKR Digital</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Desenvolvimento de website institucional em WordPress para agência de marketing canadense. Desenvolvido em 2022.
+                Design por <a href="https://leandromelo.digital/" target="_blank">Leandro Melo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://verveperformance.com.br" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>Verve Performance</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto de desenvolvimento de website institucional em WordPress para agência de marketing. Desenvolvido em 2022.
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://loulycaixe.com.br" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>Louly Caixe</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto de desenvolvimento de website institucional em WordPress para imobiliária. Desenvolvido em 2019. Design por <a href="https://leandromelo.digital/" target="_blank">Leandro Melo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://fastandheavyfitness.com" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>Fast And Heavy</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto internacional de desenvolvimento de website institucional em WordPress para academia. Desenvolvido em 2022. Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://livlivestream.com" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>LivLive Stream</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto internacional de desenvolvimento front-end de webapp angular, mobile app ionic, website institucional em WordPress para startup. Desenvolvido em 2020. Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://neurolabsolutions.com/" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>Lab Synapse</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto internacional de desenvolvimento de website institucional em WordPress para startup. Desenvolvido em 2020. Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://neurolabsolutions.com/" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>UBIS University</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto internacional de desenvolvimento de landing page em WordPress para startup. Desenvolvido em 2021. Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://promo.lovtok.com.br/" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>LovTok</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto de desenvolvimento de landing page em WordPress para e-commerce de sexshop. Desenvolvido em 2022.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://hellogym.io/payments" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>HelloGym Payments</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto internacional de desenvolvimento de landing page em WordPress para empresa de software. Desenvolvido em 2020. Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://inclinic.cashlabs.com/" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>CashLabs In Clinic</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto de desenvolvimento de website em WordPress para startup. Desenvolvido em 2022. Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://mcdowellenterprises.com/" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>McDowell Enterprises</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto de desenvolvimento de website institucional em WordPress para imobiliária. Desenvolvido em 2020. Design por <a href="https://wearenuvo.com" target="_blank">Nuvo</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://resultecontabilidades.com.br/" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>Resulte Contabilidade</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto de desenvolvimento de website institucional em WordPress para empresa de contabilidade. Desenvolvido em 2020. Design por <a href="https://creativeweb.com.br/" target="_blank">CreativeWeb</a>.</p>
+            </div>
+          </div>
+          <div class="projects-item services-item">
+            <a href="https://prollconstrutora.com.br/" target="_blank">
+              <div class="projects-item-title services-item-title">
+                <p></p>
+                <h2>Proll Construtora</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none"><path fill="#fff" d="M17 17V0H0v2.318h13.043L0 15.361V17h1.64L14.681 3.957V17H17Z"/></svg>
+              </div>
+            </a>
+            <div class="projects-item-content services-item-content">
+              <p>Projeto de desenvolvimento de website institucional em WordPress para construtora. Desenvolvido em 2018. Design por <a href="https://leandromelo.digital" target="_blank">Leandro Melo</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="./contact.html" class="button">Solicite um Orçamento</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-title">sobre</div>
+
+        <div class="about-content">
+          <h2>Meu nome é Leo Amaral, sou desenvolvedor front-end com mais de 7 anos de experiência profissional. Entusiasta em design de produto, meu foco é entregar websites e produtos digitais, mobile e web, usando HTML, CSS, JS e todo seu ecossistema, incluindo Angular, React e Next.</h2>
+          <h3>Eu construo <strong>experiências</strong> <span>responsivas, cross-browser e pixel perfect</span> que vão além de simples páginas, e realmente ajudam <strong><u>marcas ambiciosas</u></strong> a crescer.</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title">Contato</div>
+      </div>
+      <a href="mailto:contato@leoamaraldev.com.br" class="contact-mail">contato@leoamaraldev.com.br</a>
+      <div class="container">
+        <div class="contact-content">
+          <h2>Vamos conversar sobre seu próximo projeto de sucesso.</h2>
+          <div class="contact-buttons">
+            <a href="./contact.html" class="button">Solicite um Orçamento</a>
+            <a href="https://api.whatsapp.com/send?phone=5562993396662&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20especialista." onclick="window.lintrk('track', { conversion_id: 13058241 });" class="button button-ghost">Fale Com um Especialista</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
   </main>
 
   <footer class="footer">
-    <div class="footer-scroll">scroll</div>
-    <div class="footer-contact" data-selector="contactTrigger">get in touch <div class="footer-contact-background"></div></div>
+    <div class="container">
+      <ul class="footer-social">
+        <li>
+          <a href="https://www.linkedin.com/in/leoamaraldev/" title="Leo Amaral no Linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none"><path fill="#fff" d="M0 0h10v.833H0z"/><path fill="#fff" d="M.083 9.32 9.403 0l.59.59L.671 9.91z"/><path fill="#fff" d="M9.167 0H10v10h-.833z"/></svg> Linkedin
+          </a>
+        </li>
+      </ul>
+      <p class="footer-copyright">© 2023 Leo Amaral. <a href="./privacy.html">Política de privacidade</a>. CNPJ: 30.199.958/0001-14</p>
+    </div>
   </footer>
 
-  <link href="style.css" rel="stylesheet" type="text/css">
   <script src="main.js" defer></script>
+  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/fe1c93aa-d59f-4b7a-aaaa-4e7999434d7f-loader.js" ></script>
 </body>
 </html>

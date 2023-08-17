@@ -3,7 +3,14 @@
   &-social {
     margin-bottom: 20px;
     a {
+      display: flex;
+      align-items: center;
+      gap: 15px;
       text-transform: uppercase;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   a {

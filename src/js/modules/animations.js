@@ -1,45 +1,175 @@
-import { gsap, Power3 } from "gsap";
+import { gsap, Power3, Power2 } from "gsap";
+import { viewportMatches } from "../vendors/util";
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-let tl = gsap.timeline();
-const preloader = document.querySelector(".preloader");
+gsap.registerPlugin(ScrollTrigger);
 
-tl.from(".preloader-line", {
-  duration: 0.75,
-  scaleX: 0,
-  ease: Power3.out,
-  transformOrigin: "right center"
-}).from(".preloader-name", {
-  duration: 0.5,
-  y: 90,
-  ease: Power3.out,
-}, "text");
+export const initAnimations = () => {
+  let tl = gsap.timeline();
+  const preloader = document.querySelector(".preloader");
 
-window.addEventListener("load", () => {
-  setTimeout(function(){
-    preloader.classList.add("hide-preloader");
+  tl.from(".preloader-line", {
+    duration: 0.75,
+    scaleX: 0,
+    ease: Power3.easeOut,
+    transformOrigin: "right center"
+  }).from(".preloader-name", {
+    duration: 0.5,
+    y: 90,
+    ease: Power3.easeOut,
+  });
+  
+  window.addEventListener("load", () => {
+    setTimeout(function(){
+      tl.to(".preloader-name", {
+        duration: 0.5,
+        y: 90,
+        ease: Power3.easeIn,
+      });
+      tl.to(".preloader-line", {
+        duration: 0.75,
+        scaleX: 0,
+        ease: Power3.easeIn,
+        transformOrigin: "right center"
+      })
+      tl.to(".preloader", {
+        duration: 0.75,
+        scaleY: 0,
+        ease: Power3.easeIn,
+        transformOrigin: "top"
+      })
+      
+  
+      tl.from(".hero-title", {
+        duration: 0.5,
+        y: 150,
+        autoAlpha: 0,
+        ease: Power3.easeOut
+      }).from(".hero-subtitle", {
+        duration: 0.5,
+        y: 150,
+        autoAlpha: 0,
+        ease: Power3.easeOut
+      }).from(".header-logo svg", {
+        duration: 0.30,
+        y: -40,
+        autoAlpha: 0,
+      }).from(".header-trigger", {
+        duration: 0.30,
+        y: -40,
+        autoAlpha: 0,
+      })
 
-    tl.from(".hero-title span>span", {
-      duration: 0.75,
-      y: 150,
-      autoAlpha: 0,
-      ease: Power3.out,
-      stagger: 0.2
-    }).from(".header-logo svg", {
-      duration: 0.30,
-      y: -40,
-      autoAlpha: 0,
-    }).from(".header-trigger", {
-      duration: 0.30,
-      y: -40,
-      autoAlpha: 0,
-    }).from(".footer-contact", {
-      duration: 0.30,
-      y: 40,
-      autoAlpha: 0,
-    }).from(".footer-scroll", {
-      duration: 0.30,
-      y: 40,
-      autoAlpha: 0,
-    });
-  }, 2000);
-});
+      if (!viewportMatches(1200)) {
+        tl.from(".header-menu .menu-item", {
+          duration: 0.2,
+          y: -40,
+          autoAlpha: 0,
+          stagger: .1
+        })
+      }
+
+      tl.from(".hero-buttons a", {
+        duration: 0.30,
+        y: -40,
+        autoAlpha: 0,
+        stagger: .2
+      })
+    }, 1000);
+  });
+}
+export const initServicesAnimations = () => {
+  if (!document.querySelector('.services')) return;
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.services',
+      start: "top 80%",
+      end: "bottom top",
+      toggleActions: "play none none none",
+      scrub: false,
+      once: true
+    }
+  });
+
+  tl.from('.services .services-item', {
+    opacity: 0,
+    translateY: '50px',
+    ease: Power2.easeOut,
+    duration: 1,
+    stagger: .4
+  })
+
+  let projects = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.projects',
+      start: "top 80%",
+      end: "bottom top",
+      toggleActions: "play none none none",
+      scrub: false,
+      once: true
+    }
+  });
+
+  projects.from('.projects-item', {
+    opacity: 0,
+    translateY: '50px',
+    ease: Power2.easeOut,
+    duration: 1,
+    stagger: .4
+  })
+
+  let about = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.about',
+      start: "top 80%",
+      end: "bottom top",
+      toggleActions: "play none none none",
+      scrub: false,
+      once: true
+    }
+  });
+
+  about.from('.about-content h2', {
+    opacity: 0,
+    translateY: '50px',
+    ease: Power2.easeOut,
+    duration: 1,
+  })
+  about.from('.about-content h3', {
+    opacity: 0,
+    translateY: '50px',
+    ease: Power2.easeOut,
+    duration: 1,
+  })
+
+  let contact = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.contact',
+      start: "top 80%",
+      end: "bottom top",
+      toggleActions: "play none none none",
+      scrub: false,
+      once: true
+    }
+  });
+
+  contact.from('.contact-mail', {
+    opacity: 0,
+    translateY: '50px',
+    ease: Power2.easeOut,
+    duration: 1,
+  })
+  contact.from('.contact-content h2', {
+    opacity: 0,
+    translateY: '50px',
+    ease: Power2.easeOut,
+    duration: 1,
+  })
+  contact.from('.contact-buttons a', {
+    opacity: 0,
+    translateY: '50px',
+    ease: Power2.easeOut,
+    duration: 1,
+  })
+}
